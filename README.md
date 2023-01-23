@@ -25,6 +25,8 @@ Solutions:
 - Add images to specify sport (still WIP)
 - Give cards styling and borders. 
 
+Demo:
+https://davidjamesuoftbookings.netlify.app/
 
 If you have any questions about the code, feel free to contact me at
 @david.dimalanta@mail.utoronto.ca
