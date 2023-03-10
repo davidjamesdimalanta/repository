@@ -15,11 +15,11 @@ function Search() {
   };
 
   return (
-    <div className="my-6 mx-1 flex flex-col items-center justify-center">
+    <div className="my-6 md:mx-6 flex flex-col items-center justify-center">
       <input
         type="text"
         placeholder="Search for a court..."
-        className="mb-6 p-2 rounded-lg w-7/12 bg-gray-200"
+        className="mb-6 p-2 w-9/12 border-b-2 border-blue-800"
         value={searchTerm}
         onChange={handleSearch}
       />

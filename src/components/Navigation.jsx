@@ -25,12 +25,14 @@ function Navigation() {
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
             </div>
+            <div className="pl-6">
                 <img 
                     src={Logo} 
                     alt="UofT Logo"
                     className="max-h-16 pb-2 " 
                 />
-            <div className="flex items-center justify-between w-24">
+            </div>
+            <div className=" pl-1 flex items-center justify-between w-24">
             <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 fill="none" viewBox="0 0 24 24" 
@@ -45,14 +47,10 @@ function Navigation() {
             <p className="text-sm text-white">Sign In</p>
             </div>
             {showMenu && (
-                <div className="absolute top-0 right-0 w-full y-full pt-5">
-                    <div className="bg-stone-800 shadow-xl py-2 flex flex-col justify-center items-center">
-                        <div className="flex justify-between items-center w-full pl-4 pr-8 top-0 bg-blue-800 fixed">
-                            <img 
-                                src={Logo} 
-                                alt="UofT Logo"
-                                className="max-h-16 pb-2" 
-                            />  
+                <div className="absolute top-0 right-0 w-full y-full pt-5 animate-slideDown">
+                    <div className="bg-stone-800 shadow-xl pt-6 pb-3 flex flex-col justify-center items-center">
+                        <div className="w-full h-auto px-6 py-1 top-0 bg-blue-800 fixed shadow-xl">
+                            <div className="container flex justify-start items-center">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
@@ -61,13 +59,20 @@ function Navigation() {
                                 stroke="currentColor" 
                                 className="w-6 h-6"
                                 onClick={() => setShowMenu(false)}
-                            >
-                                
+                            > 
                             <path 
                                 strokeLinecap="round" 
                                 strokeLinejoin="round" 
                                 d="M6 18L18 6M6 6l12 12" />
-                            </svg>          
+                            </svg> 
+                            <div className=" pl-20">
+                            <img 
+                                src={Logo} 
+                                alt="UofT Logo"
+                                className="max-h-16 pb-2" 
+                            />
+                            </div>  
+                            </div> 
                         </div>
                         <div className="w-full pt-10 pb-1 flex justify-center hover:bg-stone-900">
                         <a href="https://recreation.utoronto.ca/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502" className="block px-4 py-2 text-white ">All Registered Programs</a>

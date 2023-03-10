@@ -17,7 +17,20 @@ module.exports = {
         'sm': '550px',
         'md': '700px',
         'lg': '1024px',
-      }
+      },
+      keyframes: {
+        'slideDown': {
+          '0%': {
+            transform: 'translateY(-400px)'
+          },
+          '100%': {
+            transform: 'translateX(0)'
+          },
+        }
+      },
+      animation: {
+        'slideDown': 'slideDown 0.2s ease-in-out'
+      },
     },
   },
   plugins: [],
