@@ -9,7 +9,8 @@ function Search() {
   const handleSearch = event => {
     setSearchTerm(event.target.value);
     const filteredResults = search.filter(court =>
-      court.title.toLowerCase().includes(searchTerm.toLowerCase())
+      court.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      court.stack.some(stackItem => stackItem.toLowerCase().includes(searchTerm.toLowerCase()))
     );
     setSearchResults(filteredResults);
   };
