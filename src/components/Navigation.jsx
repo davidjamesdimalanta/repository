@@ -32,7 +32,7 @@ function Navigation() {
                     className="max-h-16 pb-2 " 
                 />
             </div>
-            <div className=" pl-1 flex items-center justify-between w-24">
+            <div className="pl-1 flex items-center justify-between w-24">
             <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 fill="none" viewBox="0 0 24 24" 
@@ -49,8 +49,9 @@ function Navigation() {
             {showMenu && (
                 <div className="absolute top-0 right-0 w-full y-full pt-5 animate-slideDown">
                     <div className="bg-stone-800 shadow-xl pt-6 pb-3 flex flex-col justify-center items-center">
-                        <div className="w-full h-auto px-6 py-1 top-0 bg-blue-800 fixed shadow-xl">
-                            <div className="container flex justify-start items-center">
+                        <div className="w-full h-auto px-6 py-2 top-0 bg-blue-800 fixed shadow-xl">
+                            <div className="container mx-auto flex items-center justify-end">
+                            <div className="flex items-center justify-start w-16">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
@@ -64,14 +65,21 @@ function Navigation() {
                                 strokeLinecap="round" 
                                 strokeLinejoin="round" 
                                 d="M6 18L18 6M6 6l12 12" />
-                            </svg> 
-                            <div className=" pl-20">
+                            </svg>
+                            </div>
+                            <div className="pl-20 md:pl-28">
                             <img 
                                 src={Logo} 
                                 alt="UofT Logo"
-                                className="max-h-16 pb-2" 
+                                className="h-16 pb-1" 
                             />
-                            </div>  
+                            </div>
+                            <div className="pl-10 md:pl-10 flex items-center justify-between w-48">
+                            <img 
+                                src="./assets/Fusion-Icon-Light.png" 
+                                alt="Fusion Family Logo"
+                                className="h-8 md:h-10 pb-2" /> 
+                            </div>
                             </div> 
                         </div>
                         <div className="w-full pt-10 pb-1 flex justify-center hover:bg-stone-900">

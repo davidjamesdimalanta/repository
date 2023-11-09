@@ -1,7 +1,7 @@
 # uoftbookings
 
 This Project uses TailwindCSS and ReactJS to create an updated version of the
-recreation.utoronto.ca bookings webpage. 
+https://recreation.utoronto.ca/booking bookings webpage. 
 
 The focus of this app was to improve upon already existing webpages by using 
 industry standard frameworks.
